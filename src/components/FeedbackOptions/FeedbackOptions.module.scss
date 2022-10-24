@@ -1,0 +1,25 @@
+.button {
+  padding: 2px 16px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: #fff;
+
+    background-color: #6495ed;
+    transition: background-color 250ms linear, color 250ms linear;
+  }
+}
