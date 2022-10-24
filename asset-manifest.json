@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yyaremkiv/goit-react-hw-02-feedback/static/css/main.347d864c.css",
+    "main.js": "/yyaremkiv/goit-react-hw-02-feedback/static/js/main.d9dc5832.js",
+    "index.html": "/yyaremkiv/goit-react-hw-02-feedback/index.html",
+    "main.347d864c.css.map": "/yyaremkiv/goit-react-hw-02-feedback/static/css/main.347d864c.css.map",
+    "main.d9dc5832.js.map": "/yyaremkiv/goit-react-hw-02-feedback/static/js/main.d9dc5832.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.347d864c.css",
+    "static/js/main.d9dc5832.js"
+  ]
+}
