@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Section } from '../components/Section/Section';
-import { FeedbackOptions } from '../components/FeedbackOptions/FeedbackOptions';
-import { Statistics } from '../components/Statistics/Statistics';
-import { Notification } from '../components/Notification/Notification';
+import { Section } from './components/Section/Section';
+import { FeedbackOptions } from './components/FeedbackOptions/FeedbackOptions';
+import { Statistics } from './components/Statistics/Statistics';
+import { Notification } from './components/Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -31,17 +31,7 @@ export class App extends Component {
     );
 
     return (
-      <Section
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-        title="Please leave feedback"
-      >
+      <Section title="Please leave feedback">
         <FeedbackOptions
           options={this.state}
           onLeaveFeedback={this.changeState}
@@ -49,9 +39,7 @@ export class App extends Component {
 
         {countTotalFeedback ? (
           <Statistics
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
+            statistic={this.state}
             total={countTotalFeedback}
             positivePercentage={countPositiveFeedbackPercentage}
           />
